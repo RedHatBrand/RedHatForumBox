@@ -1,0 +1,214 @@
+@import url('https://red-hat-overpass-fonts.s3.amazonaws.com/overpass.css');
+@import url('https://redhatbrand.github.io/RedHatTypography/css/red-hat-typography.css');
+@import url('https://redhatbrand.github.io/RedHatPalette/css/red-hat-color-classes.css');
+
+:root, html {
+  font-size: 2.5vmin;
+}
+
+/*\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+LANGUAGES
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+html:lang(en) {
+  font-family:
+  "Overpass",
+  sans-serif; }
+html:lang(jp) {
+  font-family:
+  "Overpass",
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Kaku Gothic",
+  "Hiragino Kaku Gothic Pro W3",
+  sans-serif; }
+html:lang(ko) {
+  font-family:
+  "Overpass",
+  "Malgun Gothic",
+  "HelveticaNeueW01-85Heav",
+  sans-serif; }
+html:lang(zh) {
+  font-family:
+  "Overpass",
+  "Microsoft Yahei",
+  "Hiragino Sans GB",
+  sans-serif; }
+
+
+/*\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+NATIVE ELEMENTS
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+main > * { margin-top: 0; }
+
+.container { padding: 4rem; }
+
+#content {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  -webkit-align-items: left;
+  align-items: left;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+#content > * { flex: 0 0 auto; }
+
+.hero-date,
+.hero-call-to-action {
+  text-transform: uppercase;
+}
+
+.hero-call-to-action {
+  padding: 1rem 1.25rem 0.8rem;
+  width: auto;
+  border: thin solid;
+  display: inline-block;
+}
+
+#event-logo {
+  display: flex;
+  display: -webkit-flex;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding-bottom: 3rem;
+}
+
+.event-logo-text {
+  margin-top: 1.9vmin;
+  margin-left: 1rem;
+}
+
+#rh-logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.rh-logo-img, .event-logo-img {
+  width: 25vmin;
+  height: 12vmin;
+  display: inline-block;
+}
+
+.event-logo-img {
+  -webkit-transform: translate(-2.5%, -2.5%)
+ transform: translate(-2.5%, -2.5%)
+}
+
+.event-logo-img {
+  width: 35vmin;
+  height: 17vmin;
+}
+
+.rh-logo-img svg,
+.event-logo-img svg,
+.rh-logo-img img,
+.event-logo-img img {
+  max-width: 100%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+@media (min-aspect-ratio: 2/1) {
+  body > main {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+  }
+  main > .container:first-child { padding-left: 4rem; }
+  main > .container:last-child  { padding-right: 4rem; }
+
+  #content,
+  #event-logo,
+  #rh-logo {
+    position: static;
+  }
+
+  #content {
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+  .content-inner {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-align-items: top;
+    align-items: top;
+    -webkit-justify-content: initial;
+    justify-content: initial;
+  }
+
+  .content-inner > * {
+    margin: 0;
+    margin-right: 2rem;
+    min-height: 15vmin;
+  }
+
+  .content-headings h1, .content-headings h2 { margin: 0; }
+  .content-headings h1 { margin-top: -0.05em }
+
+  #content { padding-top: 4rem; }
+  #event-logo { padding-bottom: 4rem; }
+
+  #event-logo,
+  #rh-logo {
+    -webkit-flex: 1 1 25%;
+    flex: 1 1 25%;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .event-logo-img,
+  .rh-logo-img {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    height: auto;
+  }
+  #event-logo,
+  #rh-logo,
+  .event-logo-img,
+  .rh-logo-img {
+    max-width: 50vmin;
+  }
+}
+
+@media (min-aspect-ratio: 5/1) {
+  :root, html {
+   font-size: 5vmin;
+  }
+}

@@ -1,0 +1,76 @@
+h1 > h1, h2 > h2, h3 > h3, h4 > h4, h5 > h5, h6 > h6 { font-size: 1em; }
+
+.section-agenda {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#main-nav {
+  display: block !important;
+}
+
+#main-nav-fixed {
+  display: none !important;
+}
+
+.nav-menu li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ie-logo-rh {
+  margin-right: 1.5em;
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+}
+
+.ie-logo-event {
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+}
+
+.logo-event {
+  display: none !important;
+}
+
+.logo-rh {
+  display: none !important;
+}
+
+.theme-blue .hero-wrapper {
+  background-image: url(https://outfit-v2-exports-production.s3-ap-southeast-2.amazonaws.com/values_assets/0ac5652966d4abe03f0a2748da60029a/artwork-blue.png);
+}
+
+.theme-red .hero-wrapper {
+  background-image: url(https://outfit-v2-exports-production.s3-ap-southeast-2.amazonaws.com/values_assets/49e2ff45940040f9cfb26ed771692955/artwork-red.png);
+}
+
+.three-columns .grid-item {
+  float: left;
+  width: calc(100% / 3) !important;
+}
+
+.four-columns .grid-item {
+  float: left;
+  width: calc(100% / 4) !important;
+}
+
+.six-columns .grid-item {
+  float: left;
+  width: calc(100% / 6) !important;
+}
+
+.eight-columns .grid-item {
+  float: left;
+  width: calc(100% / 8) !important;
+}
+
+.twelve-columns .grid-item {
+  float: left;
+  width: calc(100% / 12) !important;
+}

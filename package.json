@@ -1,0 +1,19 @@
+{
+  "name": "event-landing-forum",
+  "version": "1.0.0",
+  "description": "Landing page template for the Red Hat forum",
+  "main": "index.mst",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_preview": "mustache data.json index.mst > index.html",
+    "watch": "nodemon --watch . --ext mst,json --exec 'npm run build_preview'",
+    "serve": "static & npm run watch"
+  },
+  "author": "Brad Parker <hi@bradparker.com>",
+  "license": "ISC",
+  "dependencies": {
+    "mustache": "^2.1.2",
+    "node-static": "^0.7.7",
+    "nodemon": "^1.3.8"
+  }
+}
