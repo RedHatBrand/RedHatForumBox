@@ -15,7 +15,7 @@
   <![endif]-->
 </head>
 
-<body class="rh-white-background rh-black-foreground">
+<body>
   <main class="rh-red2-background rh-white-foreground">
     <header id="event-logo" class="container">
       <div class="event-logo-img">
