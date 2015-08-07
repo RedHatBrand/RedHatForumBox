@@ -1,10 +1,9 @@
 {
   "lang": "en",
   "date": "30 August 2015",
-  "event-title": "Red Hat Forum 2015",
-  "color-theme": "",
   "event-region": "apac",
-  "_event-city": "singapore",
+  "arrow-direction": "up",
+  "event-city": "singapore",
   "call-to-action": "Register now",
   "call-to-action-link": "http://google.com/?bar=baz&fizz=buzz",
   "headline": "Energise your enterprise",

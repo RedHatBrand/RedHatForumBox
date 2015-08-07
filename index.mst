@@ -5,14 +5,7 @@
   <meta http-equiv="Cache-control" content="no-cache">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 
-  <title>{{event-title}}</title>
-
   <link rel="stylesheet" href="assets/stylesheets/main.css" />
-
-  <!--[if lt IE 9]>
-    <link rel="stylesheet" href="assets/stylesheets/ie-8.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
@@ -36,7 +29,13 @@
     </header>
 
     <section id="content" class="container">
+
       <div class="content-inner">
+        {{#arrow-direction}}
+        <div id="arrow" class="arrow-direction-{{ arrow-direction }}"></div>
+        {{/arrow-direction}}
+
+        {{^arrow-direction}}
         {{#event-city}}{{#date}}
         <div class="content-details">
           <h2>
@@ -46,6 +45,8 @@
           </h2>
         </div>
         {{/date}}{{/event-city}}
+        {{/arrow-direction}}
+
         <div class="content-headings">
           <h1>{{{ headline }}}</h1>
           <h3>{{{ subheading }}}</h3>
