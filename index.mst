@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <main class="rh-red2-background rh-white-foreground">
+  <main class="rh-red2-background rh-white-foreground rh-forum-background {{{ forum-background-class }}}">
     <header id="event-logo" class="container">
       <div class="event-logo-img">
         <svg class="redhat-logo logo-event logo-rh-forum" viewBox="0 0 1562 729" preserveAspectRatio="xMinYMid meet">
@@ -29,13 +29,12 @@
     </header>
 
     <section id="content" class="container">
-
       <div class="content-inner">
-        {{#arrow-direction}}
-        <div id="arrow" class="arrow-direction-{{ arrow-direction }}"></div>
-        {{/arrow-direction}}
+        {{#wayfinding-arrow-direction}}
+        <div id="arrow" class="arrow-direction-{{ wayfinding-arrow-direction }}"></div>
+        {{/wayfinding-arrow-direction}}
 
-        {{^arrow-direction}}
+        {{^wayfinding-arrow-direction}}
         {{#event-city}}{{#date}}
         <div class="content-details">
           <h2>
@@ -45,7 +44,7 @@
           </h2>
         </div>
         {{/date}}{{/event-city}}
-        {{/arrow-direction}}
+        {{/wayfinding-arrow-direction}}
 
         <div class="content-headings">
           <h1>{{{ headline }}}</h1>
