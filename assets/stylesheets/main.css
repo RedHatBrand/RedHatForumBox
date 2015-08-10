@@ -1,7 +1,7 @@
 @import url('https://red-hat-overpass-fonts.s3.amazonaws.com/overpass.css');
 @import url('https://redhatbrand.github.io/RedHatTypography/css/red-hat-typography.css');
 @import url('https://redhatbrand.github.io/RedHatPalette/css/red-hat-color-classes.css');
-@import url('rh-forum-background.css');
+@import url('https://redhatbrand.github.io/RedHatForumBackgroundGraphics/rh-forum-background.css');
 
 :root, html {
   font-size: 2.5vmin;
@@ -147,10 +147,11 @@ main > * { margin-top: 0; }
 #arrow {
   width: 6rem;
   height: 6rem;
-  border: thin solid;
+  border: 0.075rem solid;
   position: relative;
   -webkit-flex: 0 0 6rem;
   flex: 0 0 6rem;
+  box-sizing: border-box;
 }
 
 #arrow:before {
